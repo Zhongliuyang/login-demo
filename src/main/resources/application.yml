@@ -1,0 +1,17 @@
+server:
+  port: 8081 # 端口
+  servlet:
+    context-path: /loginDemo #访问根路径
+mybatis:
+  mapper-locations: classpath:com.zly.Dao/*.xml # 映射文件路径
+  type-aliases-package: com.zly.entity # 别名扫描
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver # mysql 驱动
+    url: jdbc:mysql://localhost:3306/login?useSSL=false # 连接嗲hi
+    username: root #用户
+    password: root #密码
