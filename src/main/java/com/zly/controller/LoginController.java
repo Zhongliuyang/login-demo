@@ -39,9 +39,9 @@ public class LoginController {
                 //验证密码成功
                 httpSession.setAttribute("token","loginSuccess");
                 Thread.sleep(1000);
-                return "index";
+                return "redirect:/";
             }else {
-                return "/";
+                return "redirect:/";
             }
         }else {
             return "login";
